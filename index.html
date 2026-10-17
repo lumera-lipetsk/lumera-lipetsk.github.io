@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUMERA — пошив женской одежды на заказ</title>
+<meta name="description" content="LUMERA — индивидуальный пошив женской одежды: платья, юбки, брюки, жакеты и блузы по вашим меркам.">
+<meta property="og:title" content="LUMERA — пошив женской одежды">
+<meta property="og:description" content="Одежда, сшитая по вашей фигуре.">
+<meta property="og:image" content="images/look3.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230E0D0C'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%23C9A961' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:auto}
+section[id]{scroll-margin-top:84px}
+body{margin:0;background:#0E0D0C;-webkit-font-smoothing:antialiased}
+a{color:#EFE8DC;transition:color .4s ease}a:hover{color:#D9BC7A}
+input::placeholder,textarea::placeholder{color:#8A8172}
+input,textarea{transition:border-color .4s ease}
+input:focus,textarea:focus{outline:none;border-bottom-color:var(--accent)!important}
+.btn{transition:background-color .5s ease,color .5s ease,border-color .5s ease,transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px -12px rgba(201,169,97,.45)}
+.btn-gold:hover{color:#0E0D0C;filter:brightness(1.08)}
+.btn-line:hover{border-color:var(--accent)!important;color:var(--accent)}
+.card{transition:border-color .6s ease,transform .6s cubic-bezier(.2,.7,.2,1),background-color .6s ease}
+.card:hover{border-color:var(--accent)!important;transform:translateY(-4px);background-color:#1A1814}
+.tile{transition:border-color .6s ease}
+.tile:hover{border-color:var(--accent)!important}
+.tile img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.05)}
+.row{transition:padding-left .5s cubic-bezier(.2,.7,.2,1)}
+.row:hover{padding-left:12px}
+.nav-link{position:relative}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.nav-link:hover::after{transform:scaleX(1)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.intro{animation:fadeUp 1.1s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}.d4{animation-delay:.6s}
+.intro-img{animation:fadeIn 1.6s ease .3s both}
+@supports (animation-timeline: view()){
+.reveal{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto}
+.intro,.intro-img,.reveal{animation:none!important}
+.btn,.card,.tile,.row{transition:none!important}
+}
+@media (max-width: 860px){
+.nav-link{display:none}
+.hero{padding:48px 20px 72px!important;gap:40px!important}
+.hero-img{height:520px!important}
+.sec{padding:72px 20px!important;gap:36px!important}
+.tile{flex-basis:calc(50% - 8px)!important;height:380px!important}
+.about-img{height:380px!important}
+.form{padding:28px 20px!important}
+}
+@media (max-width: 480px){
+.hero-img{height:460px!important}
+.tile{flex-basis:calc(50% - 8px)!important;height:280px!important}
+.tile .tile-cap{font-size:16px!important;padding:36px 12px 12px!important}
+.card{padding:32px 24px!important}
+.cta{flex:1 1 100%;text-align:center}
+}
+#lb[hidden]{display:none!important}
+.lb{animation:fadeIn .45s ease both}
+.lb-img{animation:lbIn .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes lbIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.lb-btn{transition:background-color .4s ease,border-color .4s ease,color .4s ease}
+.lb-btn:hover{background-color:rgba(201,169,97,.16)!important;border-color:var(--accent)!important;color:var(--accent)!important}
+@media (max-width: 860px){.lb-nav{width:44px!important;height:44px!important}.lb-prev{left:8px!important}.lb-next{right:8px!important}}
+@media (prefers-reduced-motion: reduce){.lb,.lb-img{animation:none!important}}
+</style>
+</head>
+<body>
+<div style="--accent: #C9A961; font-family: 'Manrope', system-ui, sans-serif; font-weight: 300; color: #EFE8DC; background: #0E0D0C; width: 100%; box-sizing: border-box; overflow-x: hidden">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(14,13,12,0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #2A261F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; letter-spacing: 0.32em; color: #C9A961">LUMERA</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; font-size: 13px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">
+<a class="nav-link" href="#services" style="text-decoration: none">Услуги</a>
+<a class="nav-link" href="#process" style="text-decoration: none">Как заказать</a>
+<a class="nav-link" href="#works" style="text-decoration: none">Работы</a>
+<a class="nav-link" href="#prices" style="text-decoration: none">Цены</a>
+<a class="btn btn-line" href="#contact" style="text-decoration: none; padding: 13px 22px; border: 1px solid #C9A961; color: #C9A961">Записаться</a>
+</nav>
+</div>
+</header>
+
+<section id="top" class="hero" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 30px">
+<div class="intro" style="display: flex; align-items: center; gap: 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">
+<span style="display: block; width: 48px; height: 1px; background: #C9A961"></span>
+<span>Atelier · Индивидуальный пошив</span>
+</div>
+<h1 class="intro d1" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(42px, 6.4vw, 88px); line-height: 1.04; letter-spacing: -0.01em">Одежда, сшитая <em style="font-style: italic; color: #C9A961">по вашей фигуре</em></h1>
+<p class="intro d2" style="margin: 0; font-size: 18px; line-height: 1.75; color: #B9B0A2; max-width: 500px">Шью женскую одежду на заказ: платья, юбки, брюки, жакеты и блузы. Снимаю мерки, помогаю с фасоном и тканью — вы получаете вещь, которая сидит безупречно.</p>
+<div class="intro d3" style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
+<a class="btn btn-gold cta" href="#contact" style="text-decoration: none; padding: 18px 34px; background: #C9A961; color: #0E0D0C; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase">Обсудить заказ</a>
+<a class="btn btn-line cta" href="#works" style="text-decoration: none; padding: 18px 34px; border: 1px solid #4A4234; font-weight: 500; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase">Смотреть работы</a>
+</div>
+</div>
+<img class="hero-img intro-img" src="images/look3.jpg" alt="Атласное платье на запах LUMERA" style="flex: 1 1 380px; min-width: 0; max-width: 100%; height: 640px; object-fit: cover; object-position: center top; border: 1px solid #2E2921; display: block">
+</section>
+
+<section id="services" style="background: #14120F; border-top: 1px solid #2A261F; border-bottom: 1px solid #2A261F">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">Услуги</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Что я шью</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #2E2921; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3l-4 4 2 2v12h10V9l2-2-4-4"></path><path d="M9 3c0 2 1.5 3 3 3s3-1 3-3"></path></svg>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500">Пошив по меркам</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Платья, юбки, брюки, блузы и жакеты — по вашим меркам, с примерками по ходу работы.</p>
+</div>
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #2E2921; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L20 4"></path><circle cx="18" cy="6" r="1.5"></circle><path d="M4 20c3-1 5-4 6-7"></path></svg>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500">Фасон и ткань</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Подскажу, какой крой подойдёт вашей фигуре и случаю, и помогу выбрать ткань.</p>
+</div>
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #2E2921; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 14H7L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500">Готовые модели</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Изделия из моих коллекций — можно заказать в вашем размере и цвете.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">Процесс</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Как проходит заказ</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 36px">
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #C9A961; padding-top: 24px">
+<div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 48px; color: #C9A961">I</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">Заявка</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Пишете мне, присылаете фото или идею вещи, которую хотите.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #C9A961; padding-top: 24px">
+<div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 48px; color: #C9A961">II</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">Мерки и фасон</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Снимаем мерки, утверждаем фасон, ткань, срок и стоимость.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #C9A961; padding-top: 24px">
+<div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 48px; color: #C9A961">III</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">Примерка</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Подгоняю изделие по фигуре, чтобы всё сидело как надо.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #C9A961; padding-top: 24px">
+<div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 48px; color: #C9A961">IV</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">Готово</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B9B0A2">Забираете готовую вещь или получаете доставкой.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="works" style="background: #14120F; border-top: 1px solid #2A261F; border-bottom: 1px solid #2A261F">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">Портфолио</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Мои работы</h2>
+</div>
+<a class="nav-link" href="[ССЫЛКА НА INSTAGRAM]" style="display: inline-block; font-size: 13px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none">Больше в Instagram →</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<button class="tile reveal" type="button" data-i="0" aria-label="Открыть фото: Платье-бандо с цветочным принтом" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look1.jpg" alt="Платье-бандо с цветочным принтом" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Платье-бандо с цветочным принтом</span>
+</button>
+<button class="tile reveal" type="button" data-i="1" aria-label="Открыть фото: Кимоно из муслина" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look2.jpg" alt="Кимоно из муслина" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Кимоно из муслина</span>
+</button>
+<button class="tile reveal" type="button" data-i="2" aria-label="Открыть фото: Атласное платье на запах" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look3.jpg" alt="Атласное платье на запах" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Атласное платье на запах</span>
+</button>
+<button class="tile reveal" type="button" data-i="3" aria-label="Открыть фото: Свитшот оверсайз и брюки" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look4.jpg" alt="Свитшот оверсайз и брюки" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Свитшот оверсайз и брюки</span>
+</button>
+<button class="tile reveal" type="button" data-i="4" aria-label="Открыть фото: Кроп-топ лайм и брюки палаццо" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look5.jpg" alt="Кроп-топ лайм и брюки палаццо" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Кроп-топ лайм и брюки палаццо</span>
+</button>
+<button class="tile reveal" type="button" data-i="5" aria-label="Открыть фото: Молочный кроп-топ и брюки палаццо" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look6.jpg" alt="Молочный кроп-топ и брюки палаццо" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Молочный кроп-топ и брюки палаццо</span>
+</button>
+<button class="tile reveal" type="button" data-i="6" aria-label="Открыть фото: Чёрный кроп-топ и брюки палаццо" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look7.jpg" alt="Чёрный кроп-топ и брюки палаццо" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Чёрный кроп-топ и брюки палаццо</span>
+</button>
+<button class="tile reveal" type="button" data-i="7" aria-label="Открыть фото: Юбка макси цвета кобальт" style="flex: 1 1 240px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #2E2921; background: #1C1A15; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/look8.jpg" alt="Юбка макси цвета кобальт" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(14,13,12,0), rgba(14,13,12,0.88)); font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.2; color: #EFE8DC">Юбка макси цвета кобальт</span>
+</button>
+</div>
+</div>
+</section>
+
+<section id="prices">
+<div class="sec" style="max-width: 900px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">Стоимость</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Цены</h2>
+<p style="margin: 0; font-size: 16px; color: #B9B0A2">Стоимость пошива без ткани. Точная цена — после обсуждения фасона.</p>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #3A342A">
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A342A"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Платье</span><span style="font-size: 16px; font-weight: 500; color: #C9A961">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A342A"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Юбка</span><span style="font-size: 16px; font-weight: 500; color: #C9A961">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A342A"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Брюки</span><span style="font-size: 16px; font-weight: 500; color: #C9A961">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A342A"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Блуза</span><span style="font-size: 16px; font-weight: 500; color: #C9A961">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A342A"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Жакет</span><span style="font-size: 16px; font-weight: 500; color: #C9A961">от [ЦЕНА] ₽</span></div>
+</div>
+</div>
+</section>
+
+<section style="background: #14120F; border-top: 1px solid #2A261F; border-bottom: 1px solid #2A261F">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div class="about-img reveal" style="flex: 1 1 320px; min-width: 0; height: 480px; background: #1C1A15; border: 1px solid #2E2921; display: flex; align-items: center; justify-content: center; color: #9C9385; font-size: 14px; text-align: center; padding: 20px; box-sizing: border-box">[Ваше фото за работой]</div>
+<div class="reveal" style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">О мастере</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Обо мне</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #B9B0A2">Меня зовут [ВАШЕ ИМЯ]. [Пара предложений о себе: сколько лет шьёте, что любите шить, почему клиентки возвращаются.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #B9B0A2">[Ваш город / работаете ли с доставкой и онлайн-заказами.]</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 64px">
+<div class="reveal" style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A961">Запись</div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 56px)">Записаться на пошив</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #B9B0A2">Оставьте заявку или напишите напрямую — отвечу и обсудим вашу вещь.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px; font-weight: 500; padding-top: 8px">
+<a href="[ССЫЛКА НА TELEGRAM]">Telegram: [@ваш_ник]</a>
+<a href="[ССЫЛКА НА INSTAGRAM]">Instagram: [@ваш_ник]</a>
+<a href="tel:[ТЕЛЕФОН]">[+7 ТЕЛЕФОН]</a>
+</div>
+</div>
+<form class="form reveal" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px; background: #14120F; border: 1px solid #3A342A; padding: 40px 36px; box-sizing: border-box">
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B9B0A2">Имя<input type="text" placeholder="Как к вам обращаться" style="font: inherit; font-family: 'Manrope', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 400; font-size: 16px; padding: 14px 0; border: none; border-bottom: 1px solid #4A4234; border-radius: 0; background: transparent; color: #EFE8DC"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B9B0A2">Телефон или Telegram<input type="text" placeholder="Куда вам ответить" style="font: inherit; font-family: 'Manrope', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 400; font-size: 16px; padding: 14px 0; border: none; border-bottom: 1px solid #4A4234; border-radius: 0; background: transparent; color: #EFE8DC"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B9B0A2">Что хотите сшить<textarea rows="3" placeholder="Например: вечернее платье к маю" style="font: inherit; font-family: 'Manrope', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 400; font-size: 16px; padding: 14px 0; border: none; border-bottom: 1px solid #4A4234; border-radius: 0; background: transparent; color: #EFE8DC; resize: vertical"></textarea></label>
+<button class="btn btn-gold" type="button" style="margin-top: 8px; font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 18px 28px; border: none; background: #C9A961; color: #0E0D0C; cursor: pointer">Отправить заявку</button>
+</form>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #2A261F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 13px; color: #8A8172">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.32em; color: #C9A961">LUMERA</span>
+<span>© 2026 · Пошив женской одежды на заказ</span>
+</div>
+</footer>
+
+<div id="lb" hidden class="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото" style="position: fixed; inset: 0; z-index: 100; background: rgba(8,7,6,0.95); display: flex; align-items: center; justify-content: center">
+<button type="button" data-lb="close" aria-label="Закрыть просмотр" style="position: absolute; inset: 0; border: none; background: transparent; cursor: zoom-out"></button>
+<div style="position: relative; z-index: 1; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 72px 16px 24px; box-sizing: border-box; max-width: 100%; max-height: 100%">
+<img id="lb-img" class="lb-img" src="images/full1.jpg" alt="" style="display: block; max-width: min(100%, 900px); max-height: calc(100vh - 170px); width: auto; height: auto; object-fit: contain; border: 1px solid #2E2921">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 8px 18px; text-align: center">
+<span id="lb-cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #EFE8DC"></span>
+<span id="lb-count" style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; color: #C9A961"></span>
+</div>
+</div>
+<button class="lb-btn" type="button" data-lb="close" aria-label="Закрыть" style="position: absolute; top: 16px; right: 16px; z-index: 2; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #4A4234; background: rgba(14,13,12,0.6); color: #EFE8DC; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+<button class="lb-btn lb-nav lb-prev" type="button" data-lb="prev" aria-label="Предыдущее фото" style="position: absolute; left: 24px; top: 50%; margin-top: -28px; z-index: 2; width: 56px; height: 56px; border-radius: 50%; border: 1px solid #4A4234; background: rgba(14,13,12,0.6); color: #EFE8DC; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg>
+</button>
+<button class="lb-btn lb-nav lb-next" type="button" data-lb="next" aria-label="Следующее фото" style="position: absolute; right: 24px; top: 50%; margin-top: -28px; z-index: 2; width: 56px; height: 56px; border-radius: 50%; border: 1px solid #4A4234; background: rgba(14,13,12,0.6); color: #EFE8DC; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>
+</button>
+</div>
+
+<script>
+(function(){
+var caps=["Платье-бандо с цветочным принтом", "Кимоно из муслина", "Атласное платье на запах", "Свитшот оверсайз и брюки", "Кроп-топ лайм и брюки палаццо", "Молочный кроп-топ и брюки палаццо", "Чёрный кроп-топ и брюки палаццо", "Юбка макси цвета кобальт"];
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function smoothTo(y){var s=window.pageYOffset,d=y-s,dur=reduce?0:Math.min(1600,700+Math.abs(d)*0.25),t0=null;
+function e(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+function st(ts){if(t0===null)t0=ts;var p=dur?Math.min(1,(ts-t0)/dur):1;window.scrollTo(0,s+d*e(p));if(p<1)requestAnimationFrame(st)}
+requestAnimationFrame(st)}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(ev){var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);if(!el)return;ev.preventDefault();smoothTo(id==='top'?0:el.getBoundingClientRect().top+window.pageYOffset-84)})});
+var lb=document.getElementById('lb'),img=document.getElementById('lb-img'),cap=document.getElementById('lb-cap'),cnt=document.getElementById('lb-count'),cur=0,last=null;
+function show(i){cur=(i+caps.length)%caps.length;img.src='images/full'+(cur+1)+'.jpg';img.alt=caps[cur];cap.textContent=caps[cur];cnt.textContent=(cur+1)+' / '+caps.length;img.classList.remove('lb-img');void img.offsetWidth;img.classList.add('lb-img')}
+function open(i){last=document.activeElement;show(i);lb.hidden=false;document.body.style.overflow='hidden';lb.querySelector('[data-lb="close"].lb-btn').focus()}
+function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
+document.querySelectorAll('[data-i]').forEach(function(b){b.addEventListener('click',function(){open(+b.getAttribute('data-i'))})});
+lb.querySelectorAll('[data-lb]').forEach(function(b){b.addEventListener('click',function(){var a=b.getAttribute('data-lb');if(a==='close')close();else if(a==='prev')show(cur-1);else show(cur+1)})});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null});
+})();
+</script>
+</body>
+</html>
